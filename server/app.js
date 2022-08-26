@@ -18,6 +18,10 @@ io.on('connection', (socket) => {
   })
 })
 
+server.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
 server.listen('3333', () => {
   console.log("server : http://127.0.0.1:3333");
 })
